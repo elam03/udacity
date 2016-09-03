@@ -1,2 +1,2 @@
 # udacity
-Udacity Full Stack Developer course work progress
+This is my Udacity Full Stack Developer course work progress.
