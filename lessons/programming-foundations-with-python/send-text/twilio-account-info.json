@@ -1,0 +1,6 @@
+{
+    "account_sid": "<<twilio-account-sid>>",
+    "auth_token": "<<twilio-auth-token>>",
+    "twilio_number": "+12345678901",
+    "send_to_number": "+09876543210"
+}
