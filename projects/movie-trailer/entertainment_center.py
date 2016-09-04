@@ -53,7 +53,13 @@ movies = [
     hunger_games
 ]
 
-fresh_tomatoes.open_movies_page(movies)
+print(deadpool.VALID_RATINGS)
+
+print(media.Movie.__doc__)
+print(media.Movie.__name__)
+print(media.Movie.__module__)
+
+# fresh_tomatoes.open_movies_page(movies)
 
 # print(toy_story.storyline)
 # print(avatar.storyline)
