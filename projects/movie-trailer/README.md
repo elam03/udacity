@@ -1,11 +1,39 @@
-This is my movie trailer project for udacity. This is my final project for **Programming Foundations with Python** course.
+This is my movie trailer project for the  **Programming Foundations with Python** course at [Udacity](https://www.udacity.com).
 
-## Setup/Installation ##
-### Requirements ###
-* Python 3.4.3
+*Note: I chose to use python3 instead of python2*
 
-## Extra Features ##
-* Caching of previously loaded movies
-* Loading of data via the public imdbapi
+# Features
+* Serves movie trailers of some of my favourite movies
+* Embedded trailer viewing
+* Movie data obtained via the public imdbapi
+* Caches previously loaded movies
 
-*One thing to note: I'm using python 3.4.3 instead of Python 2.7*
+ ### Python3 Modules
+ * json
+ * re
+ * urllib.request
+ * webbrowser
+
+ ### Web APIs Used
+ * [omdapi](http://www.omdbapi.com)
+ * [trailersapi](http://trailersapi.com)
+
+# Source Code
+This project is located in my udacity github repo, in the projects/movie-trailer folder.
+```
+git clone https://github.com/elam03/udacity
+```
+
+# Requirements
+* Python 3.4.3 (or above) [Download link](https://www.python.org/downloads/release/python-343)
+
+# Known issues/bugs
+* The use of the external api [trailersapi](http://trailersapi.com) is experimental so there may be inherited issues with the association
+* Movies that cannot be found in either of the apis may not display correctly
+
+# Quick Start
+```
+git clone https://github.com/elam03/udacity ~/elam_udacity_path
+cd ~/elam_udacity_path/movies/movie-trailer
+python3 entertainment_center.py
+```
