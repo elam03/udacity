@@ -64,6 +64,27 @@ def populate_media_movie(movie_name, manual_movie_trailer_link = ''):
             movie['Poster'],
             trailer)
 
+def check_which_movies_to_load():
+    try:
+        with open('movies_to_load.json') as json_file:
+            data = json.load(json_file)
+            movies_to_load = data['movies_to_load']
+            print(str(movies_to_load))
+
+        return movies_to_load
+    except:
+        error = '''
+        Please populate movies_to_load.json! i.e:
+        {
+            "movies_to_load":[
+                {"title":"Deadpool", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=ONHBaC-pfsk"},
+                {"title":"<<<Your movie>>>", "hardcoded_trailer_youtube_url":"<<<some youtube link here>>>"}
+            ]
+        }
+        '''
+        print(error)
+        exit()
+
 def load_movie_cache():
     cache = dict()
 
@@ -88,24 +109,7 @@ movies_cache = load_movie_cache()
 
 ###############################################################################
 # Load all the movies from the list, but skip over previously loaded movies.
-# There's a hardcoded trailer  that
-movies_to_load = [
-    {'title':'Deadpool', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=ONHBaC-pfsk'},
-    {'title':'Toy Story', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=vwyZH85NQC4'},
-    {'title':'Avatar', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=-9ceBgWV8io'},
-    {'title':'School of Rock', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=3PsUJFEBC74'},
-    {'title':'Ratatouille', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=c3sBBRxDAqk'},
-    {'title':'Midnight in Paris', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=atLg2wQQxvU'},
-    {'title':'The Dark Knight Rises', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=9l3DDSXkEQ0'},
-    {'title':'The Dark Knight', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=9l3DDSXkEQ0'},
-    {'title':'Big Trouble In Little China', 'hardcoded_trailer_youtube_url':'https://www.youtube.com/watch?v=592EiTD2Hgo'},
-    {'title':'Footloose'},
-    {'title':'Miss Congeniality'},
-    {'title':'Inside Out'},
-    {'title':'House of Cards'},
-    {'title':'Star Trek'},
-    {'title':'fasdflkasrt'}
-]
+movies_to_load = check_which_movies_to_load()
 
 movies_dict = {}
 
@@ -122,7 +126,7 @@ for movie in movies_to_load:
     else:
         m = populate_media_movie(key, hardcoded_trailer_youtube_url)
         if m is None:
-            print('NON-CACHE HIT: Cannot find data for ' + key + '!')
+            print('NON-CACHE HIT: Cannot find data for \'' + key + '\'!')
         else:
             movies_dict[key] = m
             print('NON-CACHE HIT: ' + key)

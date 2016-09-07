@@ -4,9 +4,13 @@ This is my movie trailer project for the  **Programming Foundations with Python*
 
 # Features
 * Serves movie trailers of some of my favourite movies
+* Dynamically displays movie, plot, and trailer
 * Embedded trailer viewing
 * Movie data obtained via the public imdbapi
 * Caches previously loaded movies
+
+## Usage (and modification)
+You can add extra content by modifying 'movies_to_load.json'. This is the list which is used to determine what movies to load. It will load movies from the cache if they exist, otherwise the app will attempt to retrieve data from [omdbapi](http://www.omdbapi.com) and [trailersapi](http://trailersapi.com).
 
  ### Python3 Modules
  * json
@@ -15,7 +19,7 @@ This is my movie trailer project for the  **Programming Foundations with Python*
  * webbrowser
 
  ### Web APIs Used
- * [omdapi](http://www.omdbapi.com)
+ * [omdbapi](http://www.omdbapi.com)
  * [trailersapi](http://trailersapi.com)
 
 # Source Code
@@ -27,9 +31,9 @@ git clone https://github.com/elam03/udacity
 # Requirements
 * Python 3.4.3 (or above) [Download link](https://www.python.org/downloads/release/python-343)
 
-# Known issues/bugs
+# Known issues/bugs/limitations
 * The use of the external api [trailersapi](http://trailersapi.com) is experimental so there may be inherited issues with the association
-* Movies that cannot be found in either of the apis may not display correctly
+* Movies that cannot be found in either of the apis may not display correctly; a fair amount of time the trailersapi finds similarly named movies...
 
 # Quick Start
 ```

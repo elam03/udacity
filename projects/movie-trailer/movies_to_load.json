@@ -1,0 +1,22 @@
+{
+    "movies_to_load":[
+        {"title":"Deadpool", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=ONHBaC-pfsk"},
+        {"title":"Toy Story", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=vwyZH85NQC4"},
+        {"title":"Avatar", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=-9ceBgWV8io"},
+        {"title":"School of Rock", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=3PsUJFEBC74"},
+        {"title":"Ratatouille", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=c3sBBRxDAqk"},
+        {"title":"Midnight in Paris", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=atLg2wQQxvU"},
+        {"title":"The Dark Knight Rises", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=9l3DDSXkEQ0"},
+        {"title":"The Dark Knight", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=9l3DDSXkEQ0"},
+        {"title":"Big Trouble In Little China", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=592EiTD2Hgo"},
+        {"title":"Footloose"},
+        {"title":"Miss Congeniality"},
+        {"title":"Inside Out"},
+        {"title":"House of Cards"},
+        {"title":"Star Trek"},
+        {"title":"THIS MOVIE DOES NOT EXIST"},
+        {"title":"American Werewolf"},
+        {"title":"Up", "hardcoded_trailer_youtube_url":"https://www.youtube.com/watch?v=ORFWdXl_zJ4"},
+        {"title":"Stranger Things"}
+    ]
+}
