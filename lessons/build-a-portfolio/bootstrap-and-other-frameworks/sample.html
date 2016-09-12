@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kitten Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.1.0.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project1">
+        Project1
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project2">
+        Project2
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project3">
+        Project3
+    </button>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="title-logo" src="http://placekitten.com/100/100" alt="Udacity logo">
+            </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="title-super text-thin">Jane Doette</h1>
+                <h4>Front-end Ninja</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive" src="http://placekitten.com/720/480" alt="Main kitten image!">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted">Featured Work</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img class="img-responsive" src="http://placekitten.com/420/300" alt="Appify Kitten!" data-toggle="modal" data-target="#project1">
+                <h3 class="text-uppercase">Appify</h3>
+                <p>https://github.com/udacity/appify</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="http://placekitten.com/420/299" alt="Appify Sunflower!" data-toggle="modal" data-target="#project2">
+                <h3 class="text-uppercase">Sunflower</h3>
+                <p>https://github.com/udacity/sunflower</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="http://placekitten.com/420/301" alt="Appify Bokeh!" data-toggle="modal" data-target="#project3">
+                <h3 class="text-uppercase">Bokeh</h3>
+                <p>https://github.com/udacity/bokeh</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Appify</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/420/300">
+                    Appify
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Sunflower</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/420/299" alt="Sunflower">
+                    Sunflower
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Bokeh</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/420/301" alt="Bokeh">
+                    Bokeh
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
