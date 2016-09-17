@@ -18,18 +18,16 @@ body {
 .red        { background-color: red; }
 .orange     { background-color: orange; }
 
+.light_blue, .green { width: 50%; }
+
 @media screen and (min-width: 450px) {
-    .light_blue, .green { width: 50%; }
+    .red    { width: 33.33%; }
+    .orange { width: 66.66%; }
 }
 
-@media screen and (min-width: 550px) {
-    .dark_blue, .light_blue { width: 50%; }
-    .green, .red, .orange { width: 33.33%; }
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     .container {
-        width: 700px;
+        width: 800px;
         margin-left: auto;
         margin-right: auto;
     }
