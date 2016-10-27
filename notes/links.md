@@ -6,3 +6,8 @@ Splitting terminals into windows/panes
 
 ### Python Debugging ###
 * pdb
+
+### Responsive Web Design ###
+* Grunt - automates processes
+* ImageOptim - optimizes image sizes
+* ImageMagick - image processing tools
