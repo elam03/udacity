@@ -11,3 +11,6 @@ Splitting terminals into windows/panes
 * Grunt - automates processes
 * ImageOptim - optimizes image sizes
 * ImageMagick - image processing tools
+
+### Images with Markup ###
+* Zocial font sent - popular social media icons
