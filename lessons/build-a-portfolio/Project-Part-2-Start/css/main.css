@@ -1,0 +1,50 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico|zocial);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+
+article {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  margin: 0 auto 1em auto;
+  width: 800px;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr.flourish {
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 10px 1px black;
+}
+
+footer {
+    margin: 32px 12px 32px 12px;
+}
+
+[class*="zocial-"] {
+    text-shadow: 3px 3px 3px rgb(60, 142, 109);
+}
+
+[class*="brandico-"] {
+    text-shadow: 3px 3px 3px rgb(60, 142, 109);
+}
